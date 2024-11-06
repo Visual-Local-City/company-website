@@ -9,19 +9,19 @@ function Benefit() {
             id: 1,
             icon: <UsersIcon className="w-16 bg-gradient rounded-lg p-4" />,
             title: 'Can be used by more than One Person',
-            description: 'Every first purchase You will get a special discount from us of 50% From the original Price'
+            description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa nisi cum eligendi voluptatibus quasi quaerat!"
         },
         {
             id: 2,
             icon: <ShoppingCartIcon className="w-16 bg-gradient rounded-lg p-4" />,
             title: '50% Discount On Every Purchase',
-            description: 'Every first purchase You will get a special discount from us of 50% From the original Price'
+            description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa nisi cum eligendi voluptatibus quasi quaerat!"
         },
         {
             id: 3,
             icon: <ClockIcon className="w-16 bg-gradient rounded-lg p-4" />,
             title: '24 Hours Customer service',
-            description: 'Every first purchase You will get a special discount from us of 50% From the original Price'
+            description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa nisi cum eligendi voluptatibus quasi quaerat!"
         }
     ]
 
@@ -35,8 +35,8 @@ function Benefit() {
     return (
         <div className="xl:w-container mx-auto my-24 md:my-40 text-white">
             <div className="title x-full md:w-7/12 mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl font-semibold leading-relaxed">The benefit you get</h2>
-                <p className="mt-2 w-3/4 mx-auto text-slate-400 text-base">Before you buy our Products you can see what benefits you will get From buying our Financial Software</p>
+                <h2 className="text-3xl md:text-4xl font-semibold leading-relaxed">Apa saja yang anda dapatkan?</h2>
+                <p className="mt-2 w-3/4 mx-auto text-slate-400 text-base">Sebelum Anda membeli produk kami, cari tahu apa saja manfaat yang akan Anda peroleh.</p>
             </div>
             <div className="card-list mt-16 text-center md:text-left flex flex-wrap justify-center gap-10">
                 {
