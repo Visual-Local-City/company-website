@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import AnimScroll from "./animScroll"
 import Image from 'next/image'
-import net from '../assets/net.jpg'
+import net from '../assets/dashboard.jpg'
 
 function Banner() {
     useEffect(() => {

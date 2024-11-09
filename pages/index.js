@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Banner from '../components/banner'
 import Benefit from '../components/benefit'
-import Company from '../components/company'
+import Partners from '../components/partners'
 import Footer from '../components/footer'
 import Navbar from '../components/navbar'
 import Newsletter from '../components/newsletter'
@@ -11,9 +11,9 @@ import Transaction from '../components/transaction'
 
 export default function Home() {
   return (
-    <div className="font-Poppins">
+    <div className="font-heading">
       <Head>
-        <title>Fintech - Home</title>
+        <title>Visual Local City</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
 
@@ -23,12 +23,9 @@ export default function Home() {
       </header>
 
       <article>
-        <Company />
+        <Partners />
         <Benefit />
-        <Transaction />
         <Pricing />
-        <Review />
-        <Newsletter />
       </article>
 
       <footer>

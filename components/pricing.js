@@ -6,46 +6,72 @@ function Pricing() {
 
     let dataPrice = [
         {
-            title: 'Beginner',
-            price: '$35',
-            description: 'Make your Plans easy by subscribing for free. Get it now',
-            include: ['Active monitoring', 'Manage Money', 'Unlimited Customer Service']
+            title: 'Paket Hemat',
+            price: 'Rp. 125.000',
+            description: 'Nikmati akses internet cepat dengan paket Hemat. Dapatkan sekarang!',
+            include: [
+                'Kecepatan hingga 15 Mbps',
+                'Layanan pelanggan 24/7',
+                'Gratis biaya pemasangan'
+            ],
+            containerClass: "bg-zinc-800",
+            buttonClass: "bg-green-500"
         },
         {
-            title: 'Popular',
-            price: '$50',
-            description: 'This is the most popular Package here that is often purchase',
-            include: ['Archieve chat', 'Manage Service', 'Chat support', 'Premium Subription', 'Unlock all features']
+            title: 'Paket Utama',
+            price: 'Rp. 170.000',
+            description: 'Paket Utama, rekomendasi pilihan paling populer dengan kecepatan lebih besar.',
+            include: [
+                'Kecepatan hingga 20 Mbps',
+                'Layanan pelanggan 24/7',
+                'Gratis biaya pemasangan'
+            ],
+            containerClass: "bg-zinc-800",
+            buttonClass: "bg-sky-500",
+            special: true,
         },
         {
-            title: 'Special',
-            price: '$65',
-            description: 'Make your Plans easy by subscribing for free. Get it now',
-            include: ['Active monitoring', 'Manage Money', 'Unlimited Customer Service', 'Premium Future Unlock']
+            title: 'Paket Ideal',
+            price: 'Rp. 300.000',
+            description: 'Paket Ideal untuk kebutuhan internet tanpa batas dengan kecepatan tertinggi.',
+            include: [
+                'Kecepatan hingga 50 Mbps',
+                'Layanan pelanggan 24/7',
+                'Gratis biaya pemasangan'
+            ],
+            containerClass: "bg-zinc-800",
+            buttonClass: "bg-indigo-500"
         }
     ]
 
-    useEffect(()=>{
-        AnimScroll(".title3",100,".title3")
-        AnimScroll("#price-0",200,".content2")
-        AnimScroll("#price-1",300,".content2")
-        AnimScroll("#price-2",400,".content2")
+    useEffect(() => {
+        AnimScroll(".title3", 100, ".title3")
+        AnimScroll("#price-0", 200, ".content2")
+        AnimScroll("#price-1", 300, ".content2")
+        AnimScroll("#price-2", 400, ".content2")
     })
 
 
     return (
-        <div className="mt-28 lg:mt-52 w-full xl:w-container mx-auto px-10 xl:px-0">
+        <div className="my-52 w-full xl:w-container mx-auto px-10 xl:px-0">
             <div className="title3 w-full lg:w-7/12 mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl font-semibold leading-tight md:leading-relaxed text-white">More power and easy our pricing</h2>
-                <p className="mt-5 w-3/4 mx-auto text-slate-400 text-base">Before you buy our Products you can see what benefits you will get From buying our Financial Software</p>
+                <h2 className="text-3xl md:text-4xl font-semibold leading-tight md:leading-relaxed">Harga Produk yang Kami Tawarkan</h2>
+                <p className="mt-5 mb-40 w-3/4 mx-auto text-base">Nikmati kuota besar dan akses internet cepat sesuai kebutuhan Anda, dengan harga yang fleksibel dan tanpa gangguan.</p>
             </div>
-            <div className="flex flex-wrap xl:flex-nowrap justify-center gap-10 mt-16">
-                {dataPrice.map((data,i) => {
-                    return (
-                        <div id={"price-"+i} className="group hover:bg-midBlue text-white border hover:border-midBlue rounded-xl p-10 flex flex-col justify-between h-card">
-                            <div className="">
-                                <h3 className="text-3xl font-medium">{data.title}</h3>
-                                <p className="text-3xl mt-8 font-medium">{data.price} <span className="text-base font-light">/Month</span></p>
+            <div className="flex flex-wrap xl:flex-nowrap gap-10 justify-center mt-16 relative">
+  {dataPrice.map((data, i) => {
+    return (
+      <div
+        id={"price-" + i}
+        className={`rounded-xl bg-white shadow-lg shadow-zinc-200/20 p-10 flex flex-col justify-between transform ${data.class} ${data.special ? 'scale-110 border-4 shadow-sky-200/20 border-sky-500' : ''}`}
+      >
+
+                            {data.special ? (
+                                <div class=" bg-sky-500 text-white w-fit px-3 py-1 rounded absolute -top-5 left-1/2 transform -translate-x-1/2">Rekomendasi</div>
+                            ) : null}
+                            <div className="text-slate-600">
+                                <h3 className="text-2xl font-medium">{data.title}</h3>
+                                <p className="text-4xl mt-8 font-bold text-slate-900">{data.price} <span className="text-base font-light">/ Bulan</span></p>
                                 <p className="content2 mt-5 text-base">{data.description}</p>
                                 {data.include.map(inc => {
                                     return (
@@ -56,8 +82,8 @@ function Pricing() {
                                     )
                                 })}
                             </div>
-                            <div className="">
-                                <button className="bg-midBlue group-hover:bg-white text-white group-hover:text-blue w-full h-16 font-medium rounded-lg hover:shadow-xl transition duration-200">Get started</button>
+                            <div className="mt-20">
+                                <button className={`text-white group-hover:text-white w-full h-16 font-medium rounded-lg hover:shadow-xl transition duration-200 ${data.buttonClass}`}>Pesan Sekarang</button>
                             </div>
                         </div>
                     )

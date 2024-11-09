@@ -1,10 +1,15 @@
 import { MenuIcon } from '@heroicons/react/outline'
+import Image from 'next/image'
+import logo from "../assets/logo.png"
 
 function Navbar() {
     return (
         <div className="w-full 2xl:w-large px-6 lg:px-28 2xl:px-0 mx-auto flex justify-between items-center pt-6 lg:pt-10">
-            <div className="w-logo font-bold text-white text-2xl">
-                Visme
+            <div className="w-fit font-bold text-white text-lg flex items-center gap-4">
+                <Image alt="logo" src={logo} width={50} />
+                <span>
+                Visual Local City
+                </span>
             </div>
             <div className="list-none text-white hidden xl:flex items-center">
                 <li className="px-6">
