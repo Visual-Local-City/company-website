@@ -51,9 +51,9 @@ function Pricing() {
         AnimScroll("#price-2", 400, ".content2")
     })
 
-
+ 
     return (
-        <div className="my-52 w-full xl:w-container mx-auto px-10 xl:px-0">
+        <div id="harga" className="mb-52 pt-20 w-full xl:w-container mx-auto px-10 xl:px-0">
             <div className="title3 w-full lg:w-7/12 mx-auto text-center">
                 <h2 className="text-3xl md:text-4xl font-semibold leading-tight md:leading-relaxed">Harga Produk yang Kami Tawarkan</h2>
                 <p className="mt-5 mb-40 w-3/4 mx-auto text-base">Nikmati kuota besar dan akses internet cepat sesuai kebutuhan Anda, dengan harga yang fleksibel dan tanpa gangguan.</p>

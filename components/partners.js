@@ -13,12 +13,12 @@ function Partners() {
     })
 
     return ( 
-        <div className="anim1 mt-60 sm:mt-64 md:mt-36 lg:mt-72 xl:mt-72 px-8 md:px-24 xl:px-0 w-full xl:w-container mx-auto">
+        <div id="partner"  className="anim1 mt-76 pt-20 sm:mt-64 md:mt-36 lg:mt-72 xl:mt-72 px-8 md:px-24 xl:px-0 w-full xl:w-container mx-auto">
             <h2 className="text-center text-3xl md:text-4xl font-semibold w-full lg:w-7/12 mx-auto leading-tight md:leading-relaxed text-slate-800">Partner Kami</h2>
-            <div className="anim2 flex justify-around items-center mt-8 md:mt-16">
-                <Image className="w-24 md:w-36"  src={Tp} alt="tplink logo" />
-                <Image className="w-24 md:w-60"  src={Java} alt="javamedianet logo" />
-                <Image className="w-24 md:w-24"  src={Zte} alt="ztelogo logo" />
+            <div className="anim2 flex flex-col gap-10 sm:gap-4 sm:flex-row justify-around items-center mt-16 md:mt-16">
+                <Image className="w-32 md:w-36"  src={Tp} alt="tplink logo" />
+                <Image className="w-56 md:w-60"  src={Java} alt="javamedianet logo" />
+                <Image className="w-20 md:w-"  src={Zte} alt="ztelogo logo" />
             </div>
         </div> 
     )

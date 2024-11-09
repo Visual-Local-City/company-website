@@ -15,11 +15,11 @@ function Navbar() {
                 <li className="px-6">
                     <a className="hover:text-gray-200 transition-all" href="#">Home</a>
                 </li>
-                <li className="px-6"> 
-                    <a className="hover:text-gray-200 transition-all" href="#">Pelayanan</a>
+                <li className="px-6">  
+                    <a className="hover:text-gray-200 transition-all" href="#partner">Partner</a>
                 </li>
                 <li className="px-6">
-                    <a className="hover:text-gray-200 transition-all" href="#">Harga</a>
+                    <a className="hover:text-gray-200 transition-all" href="#harga">Harga</a>
                 </li>
                 <li className="px-6">
                     <a className="hover:text-gray-200 transition-all" href="#">Fitur</a>
